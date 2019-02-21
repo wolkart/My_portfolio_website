@@ -3,7 +3,7 @@
 }
 
 .contact-form__input {
-	color: #00599A;
+	color: #fff;
 	font-size: 16px;
 	font-weight: 700;
 	
@@ -15,8 +15,8 @@
 	border: none;
 	-webkit-border-radius: 8px;
 	border-radius: 8px;
-	background-color: #FFF;
-	border: 3px solid #fff;
+	background-color: rgba(0, 22, 48, 0.5);
+	border: 3px solid rgb(255, 255, 255);
 	
 	-webkit-transition: border-color 0.3s ease-in;
 	   -moz-transition: border-color 0.3s ease-in;
@@ -40,7 +40,7 @@
 }
 
 .contact-form__textarea {
-	color: #00599A;
+	color: #fff;
 	font-size: 16px;
 	font-weight: 700;
 	
@@ -53,8 +53,8 @@
 	border: none;
 	-webkit-border-radius: 8px;
 	border-radius: 8px;
-	background-color: #FFF;
-	border: 3px solid #fff;
+	background-color: rgba(0, 22, 48, 0.5);
+	border: 3px solid rgb(255, 255, 255);
 	
 	-webkit-transition: border-color 0.3s ease-in;
 	   -moz-transition: border-color 0.3s ease-in;
@@ -75,23 +75,20 @@
 	}
 }
 
-@media (min-width: 1200px) {
-	.contact-form__bg-pencil {
-		position: relative;
-	}
-
-	.contact-form__bg-pencil:after {
-		content: "";
+.contact-form__bg-pencil {
+	position: relative;
+	
+	.shake {
 		position: absolute;
-		display: block;
+		display: none;
 		top: 75%;
 		left: 61%;
 		width: 203px;
 		height: 153px;
-
-		background-image: url("../img/bg/pencil.png");
-		background-repeat: no-repeat;
-		background-position: left top;
+		
+		@media (min-width: 1200px) {
+			display: block;
+		}
 	}
 }
 
@@ -123,8 +120,8 @@
 		color: #065a97;
 	}
 	&:active {
-		border-color: @yellow;
-		color: @yellow;
+		border-color: @hover;
+		color: @hover;
 		background-color: transparent;
 	}
 

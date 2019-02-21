@@ -1,32 +1,63 @@
 .heading {
 	color: @blueHeading;
 	font-weight: 700;
-	font-size: 32px;
+	font-size: 25px;
 	margin: 0 0 9px;
+	text-transform: uppercase;
 	
 	@media (min-width: 768px) {
-		font-size: 42px;
+		font-size: 30px;
 		margin: 0 0 19px;
 	}
 }
 
-.heading--user-name {
-	font-size: 18px;
-	line-height: 28px;
-	font-weight: 700;
-	color: #000;
-	margin: 0 0 3px;
+// .heading-bg-about {
+// 	position: relative;
 	
-	@media (min-width: 768px) {
-		margin: 0 0 9px;
-	}
-}
+// 	&:after {
+// 		content: "about me";
+// 		position: absolute;
+// 		top: 0;
+// 		left: 30px;
+// 		font-size: 100px;
+// 		color: #ACACAC;
+// 		opacity: 0.1;
+// 		font-weight: 700;
+// 		line-height: 1;
+// 		text-transform: none;
+// 		-webkit-transform: translateY(-20%);
+// 		-moz-transform: translateY(-20%);
+// 		-ms-transform: translateY(-20%);
+// 		-o-transform: translateY(-20%);
+// 		transform: translateY(-20%);
+		
+// 		@media (min-width: 768px) {
+// 			-webkit-transform: translateY(-50%);
+// 			-moz-transform: translateY(-50%);
+// 			-ms-transform: translateY(-50%);
+// 			-o-transform: translateY(-50%);
+// 			transform: translateY(-50%);
+// 		}
+
+// 		@media (min-width: 1200px) {
+// 			font-size: 150px;
+// 		}
+// 	}
+// }
 
 .heading--medium {
 	color: #000;
-	font-size: 24px;
+	font-size: 20px;
 	line-height: 28px;
 	margin: 16px 0 15px;
+	font-weight: 600;
+	
+	&--white {
+		display: inline-block;
+		color: #FFF;
+		font-weight: 700;
+		border-bottom: 2px solid #fff;
+	}
 }
 
 .heading--center {
@@ -37,6 +68,6 @@
 	color: #FFF;
 }
 
-.heading--padding-top {
-	padding-top: 7px;
+.heading--contact-form {
+	margin-top: 11px;
 }

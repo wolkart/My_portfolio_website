@@ -1,0 +1,27 @@
+.footer {
+	position: relative;
+	background-color: @blueHeading;
+	background-image: url("../img/bg/bg-footer.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	z-index: 1;
+	
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		background-color: #001630;
+		opacity: 0.6;
+		z-index: -1;
+	}
+
+	@media (min-width: 992px) {
+		background-attachment: fixed;
+	}
+}

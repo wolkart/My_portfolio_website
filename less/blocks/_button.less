@@ -1,45 +1,27 @@
+.button-wrapper {
+	margin-top: 50px;
+	text-align: center;
+}
+
 .button {
 	display: inline-block;
-	
 	font-size: 16px;
 	font-weight: 700;
-	color: #FFF;
+	color: #fff;
+	text-decoration: none;
 	
 	padding: 11px 26px 14px;
-	background-color: @blueHeading;
+	border: 2px solid #fff;
 	border-radius: 60px;
-	cursor: pointer;
-	box-shadow: 0px 3px 15px 0px rgba(0, 82, 194, 0.5);
 	-webkit-transition: 0.3s ease-in;
 	   -moz-transition: 0.3s ease-in;
 	    -ms-transition: 0.3s ease-in;
 	     -o-transition: 0.3s ease-in;
 	        transition: 0.3s ease-in;
-	
-	.fa {
-		font-size: 18px;
-		margin-right: 5px;
-	}
 
-	&:hover, &:focus {
+	&:hover, &:focus, &:active {
 		background-color: #FFF;
 		color: @blueHeading;
+		text-decoration: none;
 	}
-
-	&:active {
-		background-color: @blueHeading;
-		color: @yellow;
-	}
-}
-
-
-.Rounded_Rectangle_2_copy_4 {
-  background-color: rgb(0, 82, 194);
-  box-shadow: 0px 3px 15px 0px rgba(0, 82, 194, 0.5);
-  position: absolute;
-  left: 120px;
-  top: 524px;
-  width: 216px;
-  height: 48px;
-  z-index: 71;
 }

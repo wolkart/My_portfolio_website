@@ -1,6 +1,6 @@
 .navigation {
 	font-size: 22px;
-	font-weight: 700;
+	font-weight: 500;
 	text-transform: uppercase;
 	letter-spacing: 1.4px;
 	top: 51px;
@@ -79,15 +79,27 @@
 
 	a {
 		color: #FFF;
+		border: 1px solid transparent;
+		-webkit-border-radius: 50px;
+		border-radius: 50px;
 		text-decoration: none;
 		-webkit-transition: all 0.3s ease-in;
-		   -moz-transition: all 0.3s ease-in;
-		    -ms-transition: all 0.3s ease-in;
-		     -o-transition: all 0.3s ease-in;
-		        transition: all 0.3s ease-in;
+		-moz-transition: all 0.3s ease-in;
+		-ms-transition: all 0.3s ease-in;
+		-o-transition: all 0.3s ease-in;
+		transition: all 0.3s ease-in;
 		
 		&:hover, &:focus, &:active {
-			color: @yellow;
+			border: 1px solid #FFFFFF;
+			background-color: rgba(255, 255, 255, .1);
+		}
+
+		@media (min-width: 768px) {
+			padding: 5px 10px;
+		}
+
+		@media (min-width: 1200px) {
+			padding: 5px 20px;
 		}
 	}
 }

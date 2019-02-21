@@ -19,7 +19,7 @@ $(document).ready(function() {
 	  	$(this).addClass(class_active);
 	  });
 
-	// FancyBox - galery
+	// FancyBox - gallery
 	$(".fancybox").fancybox({
 			// Default - with fix from scroll to top
 			helpers: {
@@ -49,7 +49,7 @@ $(document).ready(function() {
 		},
 
 		submitHandler: function(form) {
-		  ajaxFormSubmit();
+			ajaxFormSubmit();
 		}
 
 	})
@@ -74,5 +74,25 @@ $(document).ready(function() {
 		// Чтобы по Submit больше ничего не выполнялось - делаем возврат false чтобы прервать цепчку срабатывания остальных функций
 		return false; 
 	}
+
+	/* Подключение wow.js */
+	wow = new WOW(
+	{
+		boxClass:     'wow',      // default
+		animateClass: 'animated', // default
+		offset:       300,        // custom
+		mobile:       false,      // default
+		live:         true,        // default
+	})
+	wow.init();
+
+	// Подключаем Stellar-paralax
+	$(window).stellar();
+
+	// Добавление блика
+	setInterval(function(){
+		$('#string>span').addClass('blink_on');
+		setTimeout(function(){$('#string>span').removeClass('blink_on')},1500);
+	},6000);
 
 });

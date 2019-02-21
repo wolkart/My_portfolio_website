@@ -6,16 +6,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<!-- Titles -->
-	<title>Артём Волков - персональный сайт портфолио.</title>
+	<title>Артём Волков - профессиональная разработка сайтов.</title>
 	<meta name="keywords" content="Ключевые слова...">
 	<meta name="description" content="Описание страницы...">
 
 	<!-- Syles -->
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="fonts/noto-webfont/noto.css">
+	<link rel="stylesheet" href="fonts/montserrat/montserrat.css">
 	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css">
+
+	<!-- Animate CSS -->
+	<link rel="stylesheet" href="libs/animate-css/animate.css">
 
 	<!-- FavIcons -->
 	<link rel="shortcut icon" href="img/favicons/favicon.ico"  type="image/x-icon" />
@@ -48,22 +51,22 @@
 				</button>
 				<!-- // Navigation icon -->
 				<ul class="navigation__list">
-					<li><a href="#resume">резюме</a></li>
+					<li><a href="#about">Обо мне</a></li>
 					<li><a href="#portfolio">портфолио</a></li>
 					<li><a href="#contacts">контакты</a></li>
 				</ul>
 			</nav>
 			
-			<div class="header__centered-content">
-				<div class="user-photo user-photo--shadow">
-					<img src="usercontent/img/waw-logo-text.png" alt="Артём Волков">
-				</div>
-				
-				<h1 class="header__title">Артём Волков</h1>
-				<h2 class="header__subtitle">HTML верстальщик сайтов</h2>
+			<div class="logo wow fadeInDown slow">
+				<div id="string"><span class="blink_on"></span></div>
 			</div>
 
-			<a href="#resume" class="mouse_scroll PageScroll2id">
+			<div class="header-offer wow fadeInUp slow">
+				<h1 class="header__title">Артем Волков</h1>
+				<h2 class="header__subtitle">Профессиональная разработка сайтов</h2>
+			</div>
+
+			<a href="#about" class="mouse_scroll PageScroll2id">
 				<div class="mouse">
 					<div class="wheel"></div>
 				</div>
@@ -78,95 +81,105 @@
 	</div>
 	<!-- // Шапка страницы -->
 
-	<!-- Резюме -->
-	<div id="resume" class="section section--bottom-line section--bg-laptop">
+	<!-- Обо мне -->
+	<div id="about" class="about section section--bottom-line section--bg-laptop">
 		<div class="container">
 			<div class="row">
 
 				<!-- Фотография пользователя -->
-				<div class="hidden-xs col-sm-2 col-lg-3">
+				<div class="hidden-xs col-sm-2 col-lg-3 wow fadeInLeft slow">
 					<div class="user-photo user-photo--big">
 						<img src="usercontent/img/photo-big.jpg" alt="Артём Волков">
 					</div>
 				</div>
 				<!-- // Фотография пользователя -->
 
-				<!-- Резюме пользователя -->
+				<!-- Обо мне текст -->
 				<div class="col-sm-10 col-lg-9">
-					<div class="heading">Резюме</div>
-					<div class="heading heading--user-name">Артём Волков</div>
-					<p>31 год, Тверь, Россия</p>
-					<p>Родился и вырос. Закончил три класса церковно-приходской IT-школы. После чего «активно занимался самообразованием».</p>
-					
-					<!-- Опыт и образование -->
-					<div class="row">
-						<div class="col-sm-6">
-							<div class="heading heading--medium">
-								Опыт работы
-							</div>
-							<ul class="definition-list">
-								<li class="definition-list__item">
-									<div class="definition-list__def">Декабрь — настоящее время</div>
-									<div class="definition-list__desc">
-										<p>Верстальщик в веб-студии “Веб-Старт”.</p>
-									</div>
-								</li>
-								<li class="definition-list__item">
-									<div class="definition-list__def">октябрь 2015 — Декабрь 2016</div>
-									<div class="definition-list__desc">
-										<p>Фрилансер, веб-дизайнер.</p>
-									</div>
-								</li>
-								<li class="definition-list__item">
-									<div class="definition-list__def">Сентбярь 2014 — Октябрь 2015</div>
-									<div class="definition-list__desc">
-										<p>«ООО Кибер Софт» — Системный администратор.</p>
-									</div>
-								</li>
-							</ul>
-						</div>
-						
-						<div class="col-sm-6">
-							<div class="heading heading--medium">
-								Образование
-							</div>
-							<ul class="definition-list">
-								<li class="definition-list__item">
-									<div class="definition-list__def">декабрь 2018</div>
-									<div class="definition-list__desc">
-										<p>Курсы по верстке сайтов HTML5, CSS3 - WebCademy.ru</p>
-									</div>
-								</li>
-								<li class="definition-list__item">
-									<div class="definition-list__def">2008 — 2012</div>
-									<div class="definition-list__desc">
-										<p>Московский Государственный университет дизайна и технологий, специальность дизайнер-технолог.</p>
-									</div>
-								</li>
-							</ul>
+					<div class="wow fadeInRight slow">
+						<div class="heading heading-bg-about">Обо мне</div>
+						<div class="about-text">
+							<p class="about-text__special">Здравствуйте!</p>
+							<p>Меня зовут Артем Волков, я - профессиональный веб-разработчик.</p>
+							<p>Единственный верный способ делать что-то хорошо, <span>любить то, что ты делаешь</span>. Для меня это не пустые слова. Я действительно люблю веб-разработку. Это ремесло позволяет помогать людям в решении их задач и проблем, принимать непосредственное участие в воплощении новых идей и проектов. Именно по этому, моя основная цель - создавать ценность. Путь проделанный от начала и до конца - главная награда.</p>
+							<p>Знаю, все это звучит достаточно шаблонно, да, зато искренне.</p>
 						</div>
 					</div>
-					<!-- // Опыт и образование -->
-					
-					<a href="usercontent/pdf/resume.pdf" target="_blank">
-						<div class="button">
-							<i class="fa fa-download" aria-hiddin="true"></i>
-							Скачать резюме
-						</div>
-					</a>
-
 				</div>
-				<!-- // Резюме пользователя -->
+				<!-- // Обо мне текст -->
+			</div>
+			
+		</div>
+	</div>
+	<!-- // Обо мне -->
 
+	<!-- Навыки и специализации -->
+	<div class="skills section">
+		<div class="container">
+			<!-- Навыки -->
+			<div class="row">
+				<div class="col-sm-6 wow fadeInLeft slow">
+					<div class="heading heading--medium heading--medium--white">
+						Мои навыки
+					</div>
+					<ul class="definition-list">
+						<li class="definition-list__item">
+							<div class="definition-list__name">Верстка</div>
+							<p>HTML5, CSS3, Bootstrap, Adaptive, BEM-naming, кроссбраузерность, семантика, валидность</p>
+						</li>
+						<li class="definition-list__item">
+							<div class="definition-list__name">Frontend & Backend</div>
+							<p>jQuery, JS, Ajax, PHP, Интеграция с CMS</p>
+						</li>
+						<li class="definition-list__item">
+							<div class="definition-list__name">Веб-дизайн</div>
+							<p>Прототипирование, UX/UI архитектура</p>
+						</li>
+						<li class="definition-list__item">
+							<div class="definition-list__name">Интернет-маркетинг</div>
+							<p>Таргетированная реклама (Facebook, Instagram), РСЯ</p>
+						</li>
+					</ul>
+				</div>
+				<!-- Навыки -->
+
+				<!-- Специализации -->
+				<div class="col-sm-6 wow fadeInRight slow">
+					<div class="heading heading--medium heading--medium--white">
+						Мои специализации
+					</div>
+					<ul class="definition-list">
+						<li class="definition-list__item">
+							<div class="definition-list__name">Landing Page</div>
+							<p>Полный цикл работ</p>
+						</li>
+						<li class="definition-list__item">
+							<div class="definition-list__name">Сайты "под ключ"</div>
+							<p>Сайты-визитки, landing page, корпоративные сайты. От идеи, до рабочего проекта на вашем хостинге.</p>
+						</li>
+						<li class="definition-list__item">
+							<div class="definition-list__name">Верстка и frontend</div>
+							<p>По готовым PSD-макетам, внесение правок.</p>
+						</li>
+						<li class="definition-list__item">
+							<div class="definition-list__name">Интеграция с CMS</div>
+							<p>Wordpress</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- // Специализации -->
+			<div class="button-wrapper">
+				<a href="#contacts" class="button wow fadeInUp slow PageScroll2id" data-wow-offset="50">Связаться со мной</a>
 			</div>
 		</div>
 	</div>
-	<!-- // Резюме -->
+	<!-- // Навыки и специализации -->
 
 	<!-- Портфолио -->
-	<div id="portfolio" class="section section--padding-smaller section--bg-gear">
+	<div class="section section--bg-gear">
 		<div class="container">
-			<div class="heading heading--center">Мои работы</div>
+			<div id="portfolio" class="heading heading--center wow fadeInDown slow" data-wow-offset="100">Мои работы</div>
 
 			<!-- 
 				1. Создаем разметку с контейнером и элементами которые будем фильтровать.
@@ -178,26 +191,26 @@
 				4. Дабавить в JS:
 				$('#Container').mixItUp();
 				5. Подключить сам MixItUp
-			 -->
+			-->
 
 
 
 			<!-- Фильтр работ -->
 			<div class="filter-block">
 				<ul class="filter-block__block-element">
-					<li class="filter-block__element">
+					<li class="filter-block__element wow fadeInLeftBig slow">
 						<span class="filter-block__button filter-block__button--active filter" data-filter="all">Все</span>
 					</li>
-					<li class="filter-block__element">
+					<li class="filter-block__element wow fadeInLeft slow">
 						<span class="filter-block__button filter" data-filter=".html-css">HTML+CSS</span>
 					</li>
-					<li class="filter-block__element">
+					<li class="filter-block__element wow zoomIn slow">
 						<span class="filter-block__button filter" data-filter=".bootstrap">Bootstrap</span>
 					</li>
-					<li class="filter-block__element">
+					<li class="filter-block__element wow fadeInRight slow">
 						<span class="filter-block__button filter" data-filter=".tutorial">Учебные</span>
 					</li>
-					<li class="filter-block__element">
+					<li class="filter-block__element wow fadeInRightBig slow">
 						<span class="filter-block__button filter" data-filter=".payed">На заказ</span>
 					</li>
 				</ul>
@@ -208,7 +221,7 @@
 
 				<!-- Работа в портфолио -->
 				<div class="col-sm-4 mix html-css tutorial">
-					<div class="portfolio-item">
+					<div class="portfolio-item wow fadeInLeft slow" data-wow-offset="250">
 						<a href="usercontent/img/works/organic.jpg" class="fancybox portfolio-item__image" rel="group" title="Учебный макет Organica">
 							<div class="portfolio-item__image__hover">
 								<i class="fa fa-search" aria-hidden="true"></i><br>
@@ -228,7 +241,7 @@
 
 				<!-- Работа в портфолио -->
 				<div class="col-sm-4 mix bootstrap tutorial">
-					<div class="portfolio-item">
+					<div class="portfolio-item wow zoomIn slow" data-wow-offset="250">
 						<a href="usercontent/img/works/apollo.jpg" class="fancybox portfolio-item__image" rel="group" title="Учебный макет Аполло">
 							<div class="portfolio-item__image__hover">
 								<i class="fa fa-search" aria-hidden="true"></i><br>
@@ -248,7 +261,7 @@
 
 				<!-- Работа в портфолио -->
 				<div class="col-sm-4 mix bootstrap tutorial">
-					<div class="portfolio-item">
+					<div class="portfolio-item wow fadeInRight slow" data-wow-offset="250">
 						<a href="usercontent/img/works/portfolio.jpg" class="fancybox portfolio-item__image" rel="group" title="Личный сайт портфолио">
 							<div class="portfolio-item__image__hover">
 								<i class="fa fa-search" aria-hidden="true"></i><br>
@@ -268,7 +281,7 @@
 
 				<!-- Работа в портфолио -->
 				<div class="col-sm-4 mix payed">
-					<div class="portfolio-item">
+					<div class="portfolio-item wow fadeInLeft slow" data-wow-offset="250">
 						<a href="usercontent/img/works/car-concept.jpg" class="fancybox portfolio-item__image" rel="group" title="Промо сайт автомобиля">
 							<div class="portfolio-item__image__hover">
 								<i class="fa fa-search" aria-hidden="true"></i><br>
@@ -288,7 +301,7 @@
 
 				<!-- Работа в портфолио -->
 				<div class="col-sm-4 mix bootstrap payed">
-					<div class="portfolio-item">
+					<div class="portfolio-item wow zoomIn slow" data-wow-offset="250">
 						<a href="usercontent/img/works/motocycles.jpg" class="fancybox portfolio-item__image" rel="group" title="Магазин мотоциклов">
 							<div class="portfolio-item__image__hover">
 								<i class="fa fa-search" aria-hidden="true"></i><br>
@@ -308,7 +321,7 @@
 
 				<!-- Работа в портфолио -->
 				<div class="col-sm-4 mix payed">
-					<div class="portfolio-item">
+					<div class="portfolio-item wow fadeInRight slow" data-wow-offset="250">
 						<a href="usercontent/img/works/music.jpg" class="fancybox portfolio-item__image" rel="group" title="Магазин аудиотехники">
 							<div class="portfolio-item__image__hover">
 								<i class="fa fa-search" aria-hidden="true"></i><br>
@@ -332,61 +345,55 @@
 	<!-- // Портфолио -->
 
 	<!-- Footer -->
-	<!-- Контакты блок -->
-	<div id="contacts" class="contacts section section--padding-contacts section--bg-cloud">
-		<div class="container">
-			<div class="row">
+	<footer class="footer">
+		<!-- Контакты блок -->
+		<div id="contacts" class="contacts section section--padding-contacts">
+			<div class="container">
+				<div class="row">
 
-				<!-- Контакты -->
-				<div class="col-sm-6">
-					<div class="heading heading--white">Контакты</div>
-					<div class="contacts__description">
-						<p>Если вы ищите специалиста по верстке сайтов, front-end разработчика в команду или для работы над проектом —  я к вашим услугам.</p>
-					</div>
-					
-					<!-- Контактные данные -->
-					<div class="row">
-						<div class="col-lg-6">
-							<ul class="definition-list">
-								<li class="definition-list__item">
-									<div class="definition-list__def definition-list__def--contacts">Email</div>
-									<div class="definition-list__desc">
-										<p><a href="mailto:wolkov.art.leo@yandex.ru">wolkov.art.leo@yandex.ru</a></p>
-									</div>
-								</li>
-								<li class="definition-list__item">
-									<div class="definition-list__def definition-list__def--contacts">Skype</div>
-									<div class="definition-list__desc">
-										<p><a href="skype:wolkartl?chat">wolkartl</a></p>
-									</div>
-								</li>
-							</ul>
+					<!-- Контакты -->
+					<div class="col-sm-6">
+						<div class="wow fadeInLeft slow" data-wow-offset="450">
+							<div class="heading heading--white">Контакты</div>
+							<div class="contacts__description">
+								<p>Если вы ищите специалиста по верстке сайтов, front-end разработчика в команду или для работы над проектом —  я к вашим услугам.</p>
+							</div>
 						</div>
 
-						<div class="col-lg-6">
-							<ul class="definition-list">
-								<li class="definition-list__item">
-									<div class="definition-list__def definition-list__def--contacts">Телефон</div>
-									<div class="definition-list__desc">
-										<p><a href="tel:+7 (999) 780-17-70">+7 (999) 780-17-70</a></p>
-									</div>
-								</li>
-								<li class="definition-list__item">
-									<div class="definition-list__def definition-list__def--contacts">Адрес</div>
-									<div class="definition-list__desc">
+						<!-- Контактные данные -->
+						<div class="row">
+							<div class="col-lg-6">
+								<ul class="definition-list wow fadeInLeft slow" data-wow-offset="250">
+									<li class="definition-list__item">
+										<div class="definition-list__name definition-list__name--contacts">Email</div>
+										<p><a class="definition-list__link" href="mailto:info@wolkartweb.pro">info@wolkartweb.pro</a></p>
+									</li>
+									<li class="definition-list__item">
+										<div class="definition-list__name definition-list__name--contacts">Skype</div>
+										<p><a class="definition-list__link" href="skype:wolkartl?chat">wolkartl</a></p>
+									</li>
+								</ul>
+							</div>
+
+							<div class="col-lg-6">
+								<ul class="definition-list wow fadeInLeft slow" data-wow-offset="250">
+									<li class="definition-list__item">
+										<div class="definition-list__name definition-list__name--contacts">Телефон</div>
+										<p><a class="definition-list__link" href="tel:+7 (999) 780-17-70">+7 (999) 780-17-70</a></p>
+									</li>
+									<li class="definition-list__item">
+										<div class="definition-list__name definition-list__name--contacts">Адрес</div>
 										<p>Россия, Тверь</p>
-									</div>
-								</li>
-							</ul>
+									</li>
+								</ul>
+							</div>
 						</div>
-					</div>
-					<!-- // Контактные данные -->
+						<!-- // Контактные данные -->
 
-					<!-- Социальные сети -->
-					<ul class="definition-list definition-list--social-icons">
-						<li class="definition-list__item">
-							<div class="definition-list__def definition-list__def--contacts">Социальные сети</div>
-							<div class="definition-list__desc">
+						<!-- Социальные сети -->
+						<ul class="definition-list definition-list--social-icons wow fadeInUp slow" data-wow-offset="100">
+							<li class="definition-list__item">
+								<div class="definition-list__name definition-list__name--contacts">Социальные сети</div>
 								<div class="social-icons">
 									<a href="https://vk.com/wolkart" target="_blank" class="fa fa-vk" aria-hidden="true"></a>
 									<a href="https://www.facebook.com/wolkov.art.leo" target="_blank" class="fa fa-facebook" aria-hidden="true"></a>
@@ -394,68 +401,64 @@
 									<a href="tg://resolve?domain=<@WolkArt>" target="_blank" class="fa fa-telegram" aria-hidden="true"></a>
 									<a href="https://github.com/wolkart" target="_blank" class="fa fa-github" aria-hidden="true"></a>
 								</div>
+							</li>
+						</ul>
+						<!-- // Социальные сети -->
+					</div>
+					<!-- // Контакты -->
+
+					<!-- Форма -->
+					<div class="col-sm-6 col-lg-6 wow fadeInRight slow" data-wow-offset="450">
+						<div class="heading heading--medium heading--white heading--contact-form">Связаться со мной</div>
+
+						<form id="contact-form" class="contact-form">
+
+							<!-- Hidden Required Fields -->
+							<input type="hidden" name="project_name" value="Мой сайт-портфолио">
+							<input type="hidden" name="form_from" value="admin@wolkartweb.pro">
+							<input type="hidden" name="admin_email" value="info@wolkartweb.pro">
+							<input type="hidden" name="form_subject" value="Сообщение с сайта-портфолио">
+							<!-- // Hidden Required Fields -->
+
+							<input type="text" class="contact-form__input" name="name" placeholder="Имя">
+							<input type="text" class="contact-form__input" name="email" placeholder="Email">
+
+							<div class="clearfix">
+								<input type="text" class="contact-form__input contact-form__input--half-width-left" name="skype" placeholder="Skype">
+								<input type="text" class="contact-form__input contact-form__input--half-width-right" name="phone" placeholder="Телефон">
 							</div>
-						</li>
-					</ul>
-					<!-- // Социальные сети -->
-				</div>
-				<!-- // Контакты -->
 
-				<!-- Форма -->
-				<div class="col-sm-6 col-lg-6">
-					<div class="heading heading--medium heading--padding-top heading--white">Связаться со мной</div>
+							<div class="contact-form__bg-pencil">
+								<textarea class="contact-form__textarea" placeholder="Ваше сообщение" name="message"></textarea>
+								<div class="wow shake delay-3s" data-wow-iteration="2">
+									<img src="img/bg/pencil.png" alt="">
+								</div>
+							</div>
 
-					<form id="contact-form" class="contact-form">
+							<input type="submit" class="contact-form__submit" name="" value="Отправить">
+						</form>
 
-						<!-- Hidden Required Fields -->
-						<input type="hidden" name="project_name" value="Мой сайт-портфолио">
-						<input type="hidden" name="form_from" value="admin@wolkovart.zzz.com.ua">
-						<input type="hidden" name="admin_email" value="wolkov.art.leo@yandex.ru">
-						<input type="hidden" name="form_subject" value="Сообщение с сайта-портфолио">
-						<!-- // Hidden Required Fields -->
+						<div id="answer"></div>
 
-						<input type="text" class="contact-form__input" name="name" placeholder="Имя">
-						<input type="text" class="contact-form__input" name="email" placeholder="Email">
-
-						<div class="clearfix">
-							<input type="text" class="contact-form__input contact-form__input--half-width-left" name="skype" placeholder="Skype">
-							<input type="text" class="contact-form__input contact-form__input--half-width-right" name="phone" placeholder="Телефон">
-						</div>
-
-						<div class="contact-form__bg-pencil">
-							<textarea class="contact-form__textarea" placeholder="Ваше сообщение" name="message"></textarea>
-						</div>
-
-						<input type="submit" class="contact-form__submit" name="" value="Отправить">
-					</form>
-
-					<div id="answer"></div>
+					</div>
+					<!-- // Форма -->
 
 				</div>
-				<!-- // Форма -->
-
 			</div>
 		</div>
-	</div>
-	<!-- // Контакты блок -->
-	
-	<!-- Копирайт -->
-	<div class="copyright">
-		<div class="container">
-			<p class="copyright__label">© 2018 Артём Волков</p>
-			<p>Веб-разработик из Твери, занимаюсь версткой и созданием сайтов.</p>
-			<p>Этот сайт сделал в рамках прохождения обучения по верстке на курсах от <a href="http://webcademy.ru/" target="_blank">WebCademy.ru</a></p>
+		<!-- // Контакты блок -->
+
+		<!-- Копирайт -->
+		<div class="copyright">
+			<div class="container">
+				<p class="copyright__label">© 2019 Артём Волков</p>
+				<p>Веб-разработик из Твери, занимаюсь версткой и созданием сайтов.</p>
+				<p>Этот сайт сделал в рамках прохождения обучения по верстке на курсах от <a href="http://webcademy.ru/" target="_blank">WebCademy.ru</a></p>
+			</div>
 		</div>
-	</div>
-	<!-- Копирайт -->
+		<!-- Копирайт -->
+	</footer>
 	<!-- // Footer -->
-
-	
-
-
-
-	
-
 
 	<!-- Vendor scripts -->
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
@@ -465,6 +468,8 @@
 	<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
 	<script src="libs/jquery/jquery.mousewheel-3.0.6.pack.js"></script>
 	<script src="libs/jquery.valedate/jquery.validate.js"></script>
+	<script src="libs/wowjs/wow.min.js"></script>
+	<script src="libs/stellarjs/jquery.stellar.min.js"></script>
 	
 	<!-- Custom scripts -->
 	<script src="js/navigation.js"></script>
