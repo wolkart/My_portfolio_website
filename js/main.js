@@ -86,9 +86,6 @@ $(document).ready(function() {
 	})
 	wow.init();
 
-	// Подключаем Stellar-paralax
-	$(window).stellar();
-
 	// Добавление блика
 	setInterval(function(){
 		$('#string>span').addClass('blink_on');

@@ -538,9 +538,6 @@ a.mouse_scroll:focus {
   margin: 0 0 13px;
   padding: 0;
 }
-.definition-list__item p {
-  color: #FFF;
-}
 .definition-list__item span {
   color: #0052c2;
 }
@@ -551,11 +548,12 @@ a.mouse_scroll:focus {
   color: #FFF;
 }
 .definition-list__name--contacts {
-  color: #FFFFFF;
-  font-size: 16px;
   line-height: 28px;
   text-transform: uppercase;
   font-weight: 600;
+}
+.definition-list__name--blue {
+  color: #0052c2;
 }
 .definition-list__desc {
   font-size: 16px;
@@ -607,6 +605,11 @@ a.mouse_scroll:focus {
   margin-top: 50px;
   text-align: center;
 }
+.button-wrapper--jcsa {
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
 .button {
   display: inline-block;
   font-size: 16px;
@@ -628,6 +631,28 @@ a.mouse_scroll:focus {
   background-color: #FFF;
   color: #0052c2;
   text-decoration: none;
+}
+.button--blue {
+  color: #0052c2;
+  border: 2px solid #0052c2;
+}
+.button--blue:hover,
+.button--blue:focus,
+.button--blue:active {
+  background-color: #0052c2;
+  color: #FFF;
+}
+.button--small {
+  padding: 10px 18px 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  .button--small {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 11px 26px 14px;
+  }
 }
 .filter-block {
   font-size: 14px;
@@ -1179,7 +1204,7 @@ label.error:after {
   left: 0;
   bottom: 0;
   background-color: #001630;
-  opacity: 0.6;
+  opacity: 0.5;
   z-index: -1;
 }
 @media (min-width: 992px) {
@@ -1328,7 +1353,7 @@ label.error:after {
   align-items: center;
   width: 100%;
   background-color: #0052c2;
-  background-image: url("../img/bg/bg-3.jpg");
+  background-image: url("../img/bg/bg-skills.jpg");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
@@ -1347,6 +1372,9 @@ label.error:after {
   background-color: #001630;
   opacity: 0.6;
   z-index: -1;
+}
+.skills p {
+  color: #FFF;
 }
 @media (min-width: 992px) {
   .skills {
@@ -1469,6 +1497,9 @@ label.error:after {
   }
 }
 .project-mockup {
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
   padding-bottom: 15px;
 }
 @media (min-width: 768px) {
@@ -1491,7 +1522,7 @@ label.error:after {
 }
 @media (min-width: 1200px) {
   .project-description__icon .fa {
-    font-size: 70px;
+    font-size: 50px;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -16,10 +16,6 @@
 	margin: 0 0 13px;
 	padding: 0;
 	
-	p {
-		color: #FFF;
-	}
-	
 	span {
 		color: @blueHeading;
 	}
@@ -29,16 +25,17 @@
 	font-size: 16px;
 	line-height: 26px;
 	font-weight: 500;
-	// color: @blueHeading;
 	color: #FFF;
-}
+	
+	&--contacts {
+		line-height: 28px;
+		text-transform: uppercase;
+		font-weight: 600;
+	}
 
-.definition-list__name--contacts {
-	color: #FFFFFF;
-	font-size: 16px;
-	line-height: 28px;
-	text-transform: uppercase;
-	font-weight: 600;
+	&--blue {
+		color: @blueHeading;
+	}
 }
 
 .definition-list__desc {
