@@ -492,6 +492,7 @@ a.mouse_scroll:focus {
   font-size: 25px;
   margin: 0 0 9px;
   text-transform: uppercase;
+  line-height: 1.4;
 }
 @media (min-width: 768px) {
   .heading {
@@ -542,6 +543,7 @@ a.mouse_scroll:focus {
   color: #0052c2;
 }
 .definition-list__name {
+  margin: 0;
   font-size: 16px;
   line-height: 26px;
   font-weight: 500;
@@ -1360,7 +1362,7 @@ label.error:after {
   -o-background-size: cover;
   background-size: cover;
   color: #FFF;
-  z-index: 1;
+  z-index: 0;
 }
 .skills:after {
   content: "";
@@ -1399,7 +1401,7 @@ label.error:after {
   -webkit-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  z-index: 1;
+  z-index: 0;
 }
 .footer:after {
   content: "";
